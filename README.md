@@ -36,10 +36,18 @@ look at the provided `/v1/status` endpoint.
 
 ### Setup Instructions
 
+#### Without Docker & Dev Containers
 1. Install python@3.9.7.  This can be managed with [asdf](https://github.com/asdf-vm/asdf) and [asdf-python](https://github.com/danhper/asdf-python)
 2. Install [poetry](https://python-poetry.org/docs/#osx--linux--bashonwindows-install-instructions)
 3. Run `poetry config virtualenvs.in-project true`
 4. Run `poetry install --no-root`.  Installing the dependencies will take a few minutes.
+5. Run `poetry run python -m backend_engineer_interview` to bring up the API server
+
+#### With Docker & Dev Containers
+1. Install [Docker](https://docs.docker.com/get-docker/)
+2. Install [VSCode](https://code.visualstudio.com/)
+3. Install [Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+4. Open the project in VSCode and type `Ctrl+Shift+P` and select `Remote-Containers: Reopen in Container`
 5. Run `poetry run python -m backend_engineer_interview` to bring up the API server
 
 ### Async Exercise Instructions
